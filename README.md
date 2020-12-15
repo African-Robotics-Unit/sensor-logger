@@ -1,0 +1,4 @@
+- Make this its own repo!
+- Move receive_comms here!
+- Document it as its own unit
+- Add it as a submodule to foot-design-project
