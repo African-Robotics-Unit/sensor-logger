@@ -1,4 +1,4 @@
-# Hopper logger
+# Sensor logger
 
 Code and documentation for the teensy logger, which forwards encoder, height and imu data to a laptop via USB 
 
