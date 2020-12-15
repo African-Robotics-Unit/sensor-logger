@@ -6,6 +6,7 @@ Code and documentation for the teensy logger, which forwards encoder, height and
 <img src="circuit.jpg" alt="Image of the circuit" width="50%"/>
 </center>
 
+
 ## Components used
 
 | Component | Voltage | Pins |
@@ -16,10 +17,30 @@ Code and documentation for the teensy logger, which forwards encoder, height and
 
 Note that the values in the table could be out of date - when it doubt, look at the circuit and source code directly
 
+
 ## Software
 Programmed using the [platform.io](https://platformio.org/) extension in vs code. See the [platformio.ini](./platformio.ini) file for dependancies, but the extension should install everything for you
 
 The [`scripts/receive_comms.py`](./scripts/receive_comms.py) Python script has some demo code to receive data from the teensy, save it to a file and plot the result
 
+
+## Usage
+If you're working within a Git project, add using
+
+    git submodule add https://github.com/African-Robotics-Unit/sensor-logger sensor_logger
+
+(ie, rename it to `sensor_logger`, which is a more Python-friendly path name)
+
+Plug the teensy into a computer via USB
+
+Upload code by pressing `ctrl+alt+U` within VS Code (which makes PlatformIO build and upload the code to the teensy)
+
+Run the example Python script to receive data:
+
+    python scripts/receive_commms.py
+
+(Look at the script for required libraries, but it's basically just `matplotlib` and `pyserial`). Press `ctrl+C` when done, and you should see a plot!
+
+
 ## Contributing
-Please keep this repo alive! _Don't_ update the files with code specific to your project - either copy-paste and modify, or better yet, create a branch and work in there. The `main` branch should be general purpose and simple to understand
+Please keep this repo alive and consistent with the actual state of the sensor! _Don't_ update the files with code specific to your project - either copy-paste and modify, or better yet, create a branch and work in there. The `main` branch should be general purpose and simple to understand
