@@ -2,9 +2,7 @@
 
 Code and documentation for the teensy logger, which forwards encoder, height and imu data to a laptop via USB 
 
-<center>
-<img src="circuit.jpg" alt="Image of the circuit" width="50%"/>
-</center>
+<img src="circuit.jpg" alt="Image of the circuit" width="50%" style="display:block; margin:auto;"/>
 
 
 ## Components used
