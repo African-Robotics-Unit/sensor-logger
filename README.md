@@ -9,15 +9,11 @@ Code and documentation for the teensy logger, which forwards encoder, height and
 
 ## Components used
 
-<p align="center">
-
 | Component | Voltage | Pins |
 | :-------- | ------: | ---: |
 | [VL53 height sensor](https://github.com/pololu/vl53l0x-arduino) | 3.3-5V | SDA -> 18, SCL -> 19 |
 | [MPU-9250 imu](https://learn.sparkfun.com/tutorials/mpu-9250-hookup-guide) | 3.3V | SDA -> 17, SCL -> 16 | encoder | 5V | A -> 0, B -> 1 |
 | [E6B2-CWZ3E encoder](https://www.ia.omron.com/data_pdf/cat/e6b2-c_ds_e_6_1_csm491.pdf) | 5V | A -> 0, B -> 1
-
-</p>
 
 Note that the values in the table could be out of date - when it doubt, look at the circuit and source code directly
 
